@@ -1,0 +1,14 @@
+com\example\demo\DemoProjectApplication.class
+com\example\demo\SecurityConfig.class
+com\example\demo\UserRepo.class
+com\example\demo\Attendance.class
+com\example\demo\AttendanceRepo.class
+com\example\demo\CorsConfig.class
+com\example\demo\UserController.class
+com\example\demo\FeeRepository.class
+com\example\demo\AdminRepo.class
+com\example\demo\UserService.class
+com\example\demo\UserSerImpl.class
+com\example\demo\UserTable.class
+com\example\demo\AdminTable.class
+com\example\demo\FeeEntity.class

@@ -1,0 +1,287 @@
+.userlogin,#ul{
+    color:skyblue
+}
+.wlcm{
+    color:skyblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color:white;
+  }
+  .container {
+    height: 31.25em;
+    width: 31.25em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .uform {
+    width: 23.75em;
+    height: 18.75em;
+    background-color:white;
+    border: solid black 2px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 3.1em);
+    left: 50%;
+    padding: 0 3.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5em;
+  }
+  .uform label {
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    color: #2e0d30;
+  }
+  .uform input {
+    font-size: 0.95em;
+    font-weight: 400;
+    color: #3f3554;
+    padding: 0.3em;
+    border: none;
+    border-bottom: 0.12em solid #3f3554;
+    outline: none;
+  }
+  .uform input:focus {
+    border-color:skyblue;
+  }
+  .uform input:not(:last-child) {
+    margin-bottom: 0.9em;
+  }
+  .uform button {
+    font-size: 0.85em;
+    padding: 0.6em 0;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    background-color:skyblue;
+    color: #2e0d30;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-top: 0.1em;
+  }
+  .panda-face2 {
+    height: 7.5em;
+    width: 8.4em;
+    background-color: #ffffff;
+    border: 0.18em solid #2e0d30;
+    border-radius: 7.5em 7.5em 5.62em 5.62em;
+    position: absolute;
+    top: 2em;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .ear-left,
+  .ear-right {
+    background-color: #3f3554;
+    height: 2.5em;
+    width: 2.81em;
+    border: 0.18em solid #2e0d30;
+    border-radius: 2.5em 2.5em 0 0;
+    top: 1.75em;
+    position: absolute;
+  }
+  .ear-left {
+    transform: rotate(-38deg);
+    left: 10.75em;
+  }
+  .ear-right {
+    transform: rotate(38deg);
+    right: 10.75em;
+  }
+  .blush-lf,
+  .blush-rg {
+    background-color:skyblue;
+    height: 1em;
+    width: 1.37em;
+    border-radius: 50%;
+    position: absolute;
+    top: 4em;
+  }
+  .blush-lf {
+    transform: rotate(25deg);
+    left: 1em;
+  }
+  .blush-rg {
+    transform: rotate(-25deg);
+    right: 1em;
+  }
+  .eye-lf,
+  .eye-rg {
+    background-color:#3f3554;
+    height: 2.18em;
+    width: 2em;
+    border-radius: 2em;
+    position: absolute;
+    top: 2.18em;
+  }
+  .eye-lf {
+    left: 1.37em;
+    transform: rotate(-20deg);
+  }
+  .eye-rg {
+    right: 1.37em;
+    transform: rotate(20deg);
+  }
+  .eyeball-lf,
+  .eyeball-rg {
+    height: 0.6em;
+    width: 0.6em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.6em;
+    top: 0.6em;
+    transition: 1s all;
+  }
+  .eyeball-lf {
+    transform: rotate(20deg);
+  }
+  .eyeball-rg {
+    transform: rotate(-20deg);
+  }
+  .nose1 {
+    height: 1em;
+    width: 1em;
+    background-color: #3f3554;
+    position: absolute;
+    top: 4.37em;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 1.2em 0 0 0.25em;
+    transform: rotate(45deg);
+  }
+  .nose1:before {
+    content: "";
+    position: absolute;
+    background-color: #3f3554;
+    height: 0.6em;
+    width: 0.1em;
+    transform: rotate(-45deg);
+    top: 0.75em;
+    left: 1em;
+  }
+  .mouth1,
+  .mouth1:before {
+    height: 0.75em;
+    width: 0.93em;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0.18em #3f3554;
+  }
+  .mouth1 {
+    top: 5.31em;
+    left: 3.12em;
+  }
+  .mouth1:before {
+    content: "";
+    position: absolute;
+    left: 0.87em;
+  }
+  .hand-lf,
+  .hand-rg {
+    background-color: #3f3554;
+    height: 2.81em;
+    width: 2.5em;
+    border: 0.18em solid #2e0d30;
+    border-radius: 0.6em 0.6em 2.18em 2.18em;
+    transition: 1s all;
+    position: absolute;
+    top: 8.4em;
+  }
+  .hand-lf {
+    left: 7.5em;
+  }
+  .hand-rg {
+    right: 7.5em;
+  }
+  .paw-lf,
+  .paw-rg {
+    background-color: #3f3554;
+    height: 3.12em;
+    width: 3.12em;
+    border: 0.18em solid #2e0d30;
+    border-radius: 2.5em 2.5em 1.2em 1.2em;
+    position: absolute;
+    top: 26.56em;
+  }
+  .paw-lf {
+    left: 10em;
+  }
+  .paw-rg {
+    right: 10em;
+  }
+  .paw-lf:before,
+  .paw-rg:before {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    height: 1.37em;
+    width: 1.75em;
+    top: 1.12em;
+    left: 0.55em;
+    border-radius: 1.56em 1.56em 0.6em 0.6em;
+  }
+  .paw-lf:after,
+  .paw-rg:after {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    top: 0.31em;
+    left: 1.12em;
+    box-shadow: 0.87em 0.37em #ffffff, -0.87em 0.37em #ffffff;
+  }
+  @media screen and (max-width: 500px) {
+    .container {
+      font-size: 14px;
+    }
+
+
+   .forgot-password-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.uform {
+  position: relative;
+  z-index: 2;
+}
+
+.panda-face {
+  position: absolute;
+  top: -80px; /* Adjust so panda face stays in place */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hand-l, .hand-r {
+  position: absolute;
+  top: 50px; /* Adjust for input focus */
+  transition: all 0.3s ease-in-out;
+}
+ 
+  }

@@ -1,0 +1,266 @@
+2025-04-03T17:20:13.264+05:30  INFO 17768 --- [demo-project] [main] c.e.demo.DemoProjectApplicationTests     : Starting DemoProjectApplicationTests using Java 17.0.11 with PID 17768 (started by karth in C:\Users\karth\OneDrive\Desktop\cb2.0-new_changes\Backend\demo-project)
+2025-04-03T17:20:13.272+05:30  INFO 17768 --- [demo-project] [main] c.e.demo.DemoProjectApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T17:20:13.869+05:30  INFO 17768 --- [demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T17:20:13.936+05:30  INFO 17768 --- [demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2025-04-03T17:20:14.531+05:30  WARN 17768 --- [demo-project] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03T17:20:14.583+05:30  INFO 17768 --- [demo-project] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03T17:20:14.774+05:30  INFO 17768 --- [demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T17:20:14.889+05:30  INFO 17768 --- [demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-04-03T17:20:14.934+05:30  INFO 17768 --- [demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T17:20:15.363+05:30  INFO 17768 --- [demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T17:20:15.404+05:30  INFO 17768 --- [demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T17:20:15.926+05:30  INFO 17768 --- [demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a1cb94
+2025-04-03T17:20:15.930+05:30  INFO 17768 --- [demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T17:20:16.128+05:30  INFO 17768 --- [demo-project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-03T17:20:17.052+05:30  INFO 17768 --- [demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T17:20:17.055+05:30  INFO 17768 --- [demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T17:20:17.394+05:30  INFO 17768 --- [demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-03T17:20:18.287+05:30  WARN 17768 --- [demo-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T17:20:18.327+05:30  WARN 17768 --- [demo-project] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e907346c-1de4-4b94-a3d4-e365a66556e6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-03T17:20:18.338+05:30  INFO 17768 --- [demo-project] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-03T17:20:19.116+05:30  INFO 17768 --- [demo-project] [main] c.e.demo.DemoProjectApplicationTests     : Started DemoProjectApplicationTests in 6.188 seconds (process running for 7.35)
+2025-04-03T17:20:19.655+05:30  INFO 17768 --- [demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T17:20:19.659+05:30  INFO 17768 --- [demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T17:20:19.669+05:30  INFO 17768 --- [demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T17:20:36.285+05:30  INFO 12964 --- [demo-project] [restartedMain] c.example.demo.DemoProjectApplication    : Starting DemoProjectApplication using Java 17.0.11 with PID 12964 (C:\Users\karth\OneDrive\Desktop\cb2.0-new_changes\Backend\demo-project\target\classes started by karth in C:\Users\karth\OneDrive\Desktop\cb2.0-new_changes\Backend\demo-project)
+2025-04-03T17:20:36.287+05:30  INFO 12964 --- [demo-project] [restartedMain] c.example.demo.DemoProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T17:20:36.343+05:30  INFO 12964 --- [demo-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-03T17:20:36.344+05:30  INFO 12964 --- [demo-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-03T17:20:36.781+05:30  INFO 12964 --- [demo-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T17:20:36.858+05:30  INFO 12964 --- [demo-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+2025-04-03T17:20:37.351+05:30  WARN 12964 --- [demo-project] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03T17:20:37.384+05:30  INFO 12964 --- [demo-project] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03T17:20:37.719+05:30  INFO 12964 --- [demo-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-03T17:20:37.731+05:30  INFO 12964 --- [demo-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T17:20:37.732+05:30  INFO 12964 --- [demo-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-03T17:20:37.780+05:30  INFO 12964 --- [demo-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-03T17:20:37.781+05:30  INFO 12964 --- [demo-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2025-04-03T17:20:37.923+05:30  INFO 12964 --- [demo-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T17:20:37.969+05:30  INFO 12964 --- [demo-project] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-04-03T17:20:37.999+05:30  INFO 12964 --- [demo-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T17:20:38.224+05:30  INFO 12964 --- [demo-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T17:20:38.250+05:30  INFO 12964 --- [demo-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T17:20:38.560+05:30  INFO 12964 --- [demo-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ff48218
+2025-04-03T17:20:38.563+05:30  INFO 12964 --- [demo-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T17:20:38.643+05:30  INFO 12964 --- [demo-project] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-03T17:20:39.360+05:30  INFO 12964 --- [demo-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T17:20:39.362+05:30  INFO 12964 --- [demo-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T17:20:39.586+05:30  INFO 12964 --- [demo-project] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-03T17:20:40.224+05:30  WARN 12964 --- [demo-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T17:20:40.251+05:30  WARN 12964 --- [demo-project] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 27f42ce9-cd6c-46f5-9b97-42905c2906db
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-03T17:20:40.260+05:30  INFO 12964 --- [demo-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-03T17:20:40.667+05:30  INFO 12964 --- [demo-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-03T17:20:40.706+05:30  INFO 12964 --- [demo-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-03T17:20:40.715+05:30  INFO 12964 --- [demo-project] [restartedMain] c.example.demo.DemoProjectApplication    : Started DemoProjectApplication in 4.872 seconds (process running for 5.252)
+2025-04-03T17:21:45.185+05:30  INFO 12964 --- [demo-project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T17:21:45.186+05:30  INFO 12964 --- [demo-project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T17:21:45.188+05:30  INFO 12964 --- [demo-project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-03T17:21:45.336+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        at1_0.id,
+        at1_0.email,
+        at1_0.mobile,
+        at1_0.name,
+        at1_0.password 
+    from
+        admin_table at1_0 
+    where
+        at1_0.email=?
+2025-04-03T17:21:47.860+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        ut1_0.id,
+        ut1_0.course,
+        ut1_0.course_code,
+        ut1_0.dob,
+        ut1_0.education_level,
+        ut1_0.email,
+        ut1_0.first_name,
+        ut1_0.gender,
+        ut1_0.last_name,
+        ut1_0.mobile_number,
+        ut1_0.roll_number 
+    from
+        user_table ut1_0 
+    where
+        ut1_0.email=?
+2025-04-03T17:21:47.936+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        ut1_0.id,
+        ut1_0.course,
+        ut1_0.course_code,
+        ut1_0.dob,
+        ut1_0.education_level,
+        ut1_0.email,
+        ut1_0.first_name,
+        ut1_0.gender,
+        ut1_0.last_name,
+        ut1_0.mobile_number,
+        ut1_0.roll_number 
+    from
+        user_table ut1_0 
+    where
+        ut1_0.email=?
+2025-04-03T17:21:49.794+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        ut1_0.id,
+        ut1_0.course,
+        ut1_0.course_code,
+        ut1_0.dob,
+        ut1_0.education_level,
+        ut1_0.email,
+        ut1_0.first_name,
+        ut1_0.gender,
+        ut1_0.last_name,
+        ut1_0.mobile_number,
+        ut1_0.roll_number 
+    from
+        user_table ut1_0 
+    where
+        ut1_0.email=?
+2025-04-03T17:21:49.808+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        ut1_0.id,
+        ut1_0.course,
+        ut1_0.course_code,
+        ut1_0.dob,
+        ut1_0.education_level,
+        ut1_0.email,
+        ut1_0.first_name,
+        ut1_0.gender,
+        ut1_0.last_name,
+        ut1_0.mobile_number,
+        ut1_0.roll_number 
+    from
+        user_table ut1_0 
+    where
+        ut1_0.email=?
+2025-04-03T17:21:49.820+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        count(a1_0.id) 
+    from
+        attendance a1_0 
+    where
+        a1_0.roll_number=? 
+        and a1_0.date between ? and ?
+2025-04-03T17:21:49.860+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        count(a1_0.id) 
+    from
+        attendance a1_0 
+    where
+        a1_0.roll_number=? 
+        and a1_0.date between ? and ?
+2025-04-03T17:21:49.865+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        fe1_0.roll_number,
+        fe1_0.amount 
+    from
+        fees fe1_0 
+    where
+        fe1_0.roll_number=?
+2025-04-03T17:21:49.894+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fe1_0.roll_number,
+        fe1_0.amount 
+    from
+        fees fe1_0 
+    where
+        fe1_0.roll_number=?
+2025-04-03T17:22:09.377+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.date,
+        a1_0.present_count,
+        a1_0.roll_number,
+        a1_0.status 
+    from
+        attendance a1_0 
+    where
+        a1_0.date between ? and ?
+2025-04-03T17:22:09.380+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.date,
+        a1_0.present_count,
+        a1_0.roll_number,
+        a1_0.status 
+    from
+        attendance a1_0 
+    where
+        a1_0.date=?
+2025-04-03T17:22:09.391+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.date,
+        a1_0.present_count,
+        a1_0.roll_number,
+        a1_0.status 
+    from
+        attendance a1_0 
+    where
+        a1_0.date between ? and ?
+2025-04-03T17:22:09.394+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        ut1_0.id,
+        ut1_0.course,
+        ut1_0.course_code,
+        ut1_0.dob,
+        ut1_0.education_level,
+        ut1_0.email,
+        ut1_0.first_name,
+        ut1_0.gender,
+        ut1_0.last_name,
+        ut1_0.mobile_number,
+        ut1_0.roll_number 
+    from
+        user_table ut1_0
+2025-04-03T17:22:09.407+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.date,
+        a1_0.present_count,
+        a1_0.roll_number,
+        a1_0.status 
+    from
+        attendance a1_0 
+    where
+        a1_0.date=?
+2025-04-03T17:22:09.417+05:30 DEBUG 12964 --- [demo-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        ut1_0.id,
+        ut1_0.course,
+        ut1_0.course_code,
+        ut1_0.dob,
+        ut1_0.education_level,
+        ut1_0.email,
+        ut1_0.first_name,
+        ut1_0.gender,
+        ut1_0.last_name,
+        ut1_0.mobile_number,
+        ut1_0.roll_number 
+    from
+        user_table ut1_0

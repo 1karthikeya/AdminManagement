@@ -23,7 +23,7 @@ const UserLogin = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://192.168.0.114:8080/api/login", input, {
+      const response = await axios.post("http://localhost:8080/api/login", input, {
         headers: { "Content-Type": "application/json" },
         withCredentials: true, // Ensures cookies are sent if needed
       });

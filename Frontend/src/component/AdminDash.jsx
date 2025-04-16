@@ -31,7 +31,7 @@ const AdminDash = () => {
     };
     try {
       // Send POST request to Spring Boot backend
-      await axios.post("http://192.168.0.114:8080/api/check", userData);
+      await axios.post("http://localhost:8080/api/check", userData);
     const emailBody = `
       Hello ${name},
 

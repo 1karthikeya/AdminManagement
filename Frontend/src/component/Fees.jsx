@@ -13,7 +13,7 @@ const Fees = () => {
     const fetchUsersAndFees = async () => {
       try {
         // ✅ Fetch all users
-        const usersResponse = await axios.get("http://192.168.0.114:8080/api/all");
+        const usersResponse = await axios.get("http://localhost:8080/api/all");
         console.log("Users Data:", usersResponse.data);
 
         const users = usersResponse.data;
@@ -21,7 +21,7 @@ const Fees = () => {
         // ✅ Fetch fee data for each user
         const feePromises = users.map(async (user) => {
           try {
-            const feeResponse = await axios.get(`http://192.168.0.114:8080/api/fees/${user.rollNumber}`);
+            const feeResponse = await axios.get(`http://localhost:8080/api/fees/${user.rollNumber}`);
             return {
               rollNumber: user.rollNumber,
               name: `${user.firstName} ${user.lastName}`,
@@ -72,14 +72,14 @@ const Fees = () => {
 
       console.log("Sending Data:", JSON.stringify(requestBody));
 
-      await axios.post("http://192.168.0.114:8080/api/add", requestBody, {
+      await axios.post("http://localhost:8080/api/add", requestBody, {
         headers: { "Content-Type": "application/json" },
       });
 
       alert("Amount updated successfully!");
 
       // ✅ Re-fetch latest amount from backend to prevent doubling
-      const updatedFeeResponse = await axios.get(`http://192.168.0.114:8080/api/fees/${rollNumber}`);
+      const updatedFeeResponse = await axios.get(`http://localhost:8080/api/fees/${rollNumber}`);
       const updatedAmount = updatedFeeResponse.data.amount ?? 0;
 
       // ✅ Update UI with the latest amount from the backend

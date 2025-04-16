@@ -40,7 +40,7 @@ const Profile = () => {
   
       try {
         // ✅ Fetch user details
-        const response = await axios.get("http://192.168.0.114:8080/api/user", {
+        const response = await axios.get("http://localhost:8080/api/user", {
           params: { email: storedEmail },
         });
   
@@ -52,7 +52,7 @@ const Profile = () => {
             // ✅ Fetch Attendance Data
             try {
               const attendanceResponse = await axios.get(
-                "http://192.168.0.114:8080/api/yattendance",
+                "http://localhost:8080/api/yattendance",
                 { params: { rollNumber } }
               );
 
@@ -71,7 +71,7 @@ const Profile = () => {
             // ✅ Fetch Fee Amount by Roll Number
             try {
               const feeResponse = await axios.get(
-                `http://192.168.0.114:8080/api/fees/${rollNumber}`
+                `http://localhost:8080/api/fees/${rollNumber}`
               );
   
               console.log("Fee API Response:", feeResponse.data);
@@ -146,7 +146,7 @@ const Profile = () => {
   // ✅ Handle Save button click (Update data in SQL)
   const handleSave = async () => {
     try {
-      const response = await axios.put("http://192.168.0.114:8080/api/update", {
+      const response = await axios.put("http://localhost:8080/api/update", {
         email: userData.email, // Email is used as identifier
         ...editedData,
       });

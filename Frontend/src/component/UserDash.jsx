@@ -21,7 +21,7 @@ const UserDash = () => {
 
   const fetchUserData = async (email) => {
     try {
-      const response = await axios.get(`http://192.168.0.114:8080/api/user?email=${email}`);
+      const response = await axios.get(`http://localhost:8080/api/user?email=${email}`);
       if (response.data) {
         setUserData(response.data);
         setIsRegistered(true); // If data exists, set as registered
@@ -126,7 +126,7 @@ const UserRegistrationForm = ({ fetchUserData }) => {
     setFormData(updatedFormData);
 
     try {
-      const response = await axios.post("http://192.168.0.114:8080/api/save", updatedFormData);
+      const response = await axios.post("http://localhost:8080/api/save", updatedFormData);
       if (response.status === 201) {
         alert("Registration Successful!");
         fetchUserData(updatedFormData.email);

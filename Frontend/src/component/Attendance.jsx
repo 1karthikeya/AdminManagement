@@ -21,7 +21,7 @@ const Attendance = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://192.168.0.114:8080/api/all");
+      const response = await axios.get("http://localhost:8080/api/all");
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -31,7 +31,7 @@ const Attendance = () => {
 
   const fetchMonthlyAttendance = async () => {
     try {
-      const response = await axios.get("http://192.168.0.114:8080/api/monthlyAttendance");
+      const response = await axios.get("http://localhost:8080/api/monthlyAttendance");
       setMonthlyAttendance(response.data);
     } catch (error) {
       console.error("Error fetching monthly attendance:", error);
@@ -41,7 +41,7 @@ const Attendance = () => {
 
   const fetchExistingAttendance = async (date) => {
     try {
-      const response = await axios.get("http://192.168.0.114:8080/api/attendance", { params: { date } });
+      const response = await axios.get("http://localhost:8080/api/attendance", { params: { date } });
       const existingAttendance = response.data.reduce((acc, entry) => {
         acc[entry.rollNumber] = entry.status;
         return acc;
@@ -68,7 +68,7 @@ const Attendance = () => {
     };
 
     try {
-      const response = await axios.post("http://192.168.0.114:8080/api/saveAttendance", [attendanceData], {
+      const response = await axios.post("http://localhost:8080/api/saveAttendance", [attendanceData], {
         headers: { "Content-Type": "application/json" },
       });
 
